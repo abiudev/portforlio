@@ -30,7 +30,7 @@ const Hero = () => {
                             </div>
                         </div>
 
-                        <div className="self-end lg:order-last lg:pb-20 lg:col-span-3">
+                        <div className="self-end -mb-26 lg:order-last lg:pb-20 lg:col-span-3">
                             <p className="text-xs font-bold tracking-widest text-gray-500 uppercase">
                                 ⚡️ Socials
                             </p>

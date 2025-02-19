@@ -38,18 +38,18 @@ const Navbar = () => {
       Abiud 
         </button>
         <div className="hidden md:flex space-x-4">
-          <button onClick={() => scrollToSection("about")} className="text-red-800 hover:text-teal-600 transition-colors">
+          <button onClick={() => scrollToSection("about")} className="text-red-800 font-semibold hover:text-teal-600 transition-colors">
             About
           </button>
           <button
             onClick={() => scrollToSection("technologies")}
-            className="text-white hover:text-teal-600 transition-colors"
+            className="text-red-800 font-semibold hover:text-teal-600 transition-colors"
           >
             Technologies
           </button>
           <button
             onClick={() => scrollToSection("projects")}
-            className="text-white hover:text-teal-600 transition-colors"
+            className="text-red-800 font-semibold hover:text-teal-600 transition-colors"
           >
             Projects
           </button>
@@ -58,7 +58,7 @@ const Navbar = () => {
           <a
             href="/Abiud-Masinde Resume.pdf"
             download
-            className="bg-teal-600 text-white px-4 py-2 rounded-lg sm:ml-4 hover:bg-teal-700 transition-colors"
+            className="bg-red-900   font-semiboldpx-4 py-2 px-2 rounded-lg sm:ml-4 hover:bg-teal-700 transition-colors"
           >
              Resume
           </a>
