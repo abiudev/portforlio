@@ -1,0 +1,47 @@
+@import "tailwindcss";
+:root {
+  --neon-gradient: linear-gradient(45deg, #ff00ff, #00ffff);
+  --teal-600: #0d9488;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.text-neon-gradient {
+  background: var(--neon-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 5px rgba(255, 0, 255, 0.5), 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.bg-neon-gradient {
+  background: var(--neon-gradient);
+}
+
+.border-neon-gradient {
+  border: 2px solid transparent;
+  background-image: var(--neon-gradient);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.shadow-neon {
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
