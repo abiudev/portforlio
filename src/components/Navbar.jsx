@@ -34,8 +34,8 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="container  mb-2 mx-auto px-4 py-4 flex justify-between items-center">
-        <button onClick={() => scrollToSection("hero")} className="text-2xl font-bold lg:ml-37 text-neon-gradient">
-      Abiud 
+        <button onClick={() => scrollToSection("hero")} className="text-2xl font-bold lg:ml-37 text-red-900">
+      Abiud <span className="hidden sm:inline">Masinde.</span> 
         </button>
         <div className="hidden md:flex space-x-4">
           <button onClick={() => scrollToSection("about")} className="text-red-800 font-semibold hover:text-teal-600 transition-colors">
@@ -43,7 +43,7 @@ const Navbar = () => {
           </button>
           <button
             onClick={() => scrollToSection("technologies")}
-            className="text-red-800 font-semibold hover:text-teal-600 transition-colors"
+            className="text-red-800 font-semibold hover:text-red-950 transition-colors"
           >
             Technologies
           </button>
@@ -66,7 +66,7 @@ const Navbar = () => {
             className="md:hidden text-white hover:text-teal-600 transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? <X size={24} /> : <Menu className="text-red-900" size={24} />}
           </button>
         </div>
       </div>

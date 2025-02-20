@@ -7,12 +7,13 @@ const Hero = () => {
         <div className="">
             
 
-            <section className="pt-12 mb-12   bg-white">
+            <section className="pt-20 pb-22 bg-white">
+
                 <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                     <div className="grid max-w-md grid-cols-1 mx-auto lg:grid-cols-12 gap-x-6 gap-y-8 lg:max-w-none">
-                        <div className="self-center lg:col-span-4">
-                            <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl">
-                                Hey 👋 I am Abiud Masinde, FrontEnd Developer.
+                        <div className="self-center pt-10 lg:col-span-4">
+                            <h1 className="text-3xl font-bold text-gray-950 sm:text-4xl xl:text-5xl">
+                                Hey 👋 I am  <span className="text-red-900">Abiud Masinde</span>, FrontEnd Developer.
                             </h1>
                             <p className="mt-5 text-base font-normal leading-7 text-gray-500">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus.
@@ -30,8 +31,8 @@ const Hero = () => {
                             </div>
                         </div>
 
-                        <div className="self-end -mb-26 lg:order-last lg:pb-20 lg:col-span-3">
-                            <p className="text-xs font-bold tracking-widest text-gray-500 uppercase">
+                        <div className="self-end lg:-mb-26 lg:order-last lg:pb-20 lg:col-span-3">
+                            <p className="text-xs font-bold tracking-widest text-red-900 uppercase">
                                 ⚡️ Socials
                             </p>
 
@@ -74,7 +75,7 @@ const Hero = () => {
                             </div>
                         </div>
 
-                        <div className="self-end lg:col-span-5">
+                        <div className="self-end pt-10 lg:col-span-5">
                     <img className="w-full mx-auto" src="/abiud.jpg" alt="Abiud" />
                 </div>
                     </div>
