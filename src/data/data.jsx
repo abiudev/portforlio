@@ -1,23 +1,38 @@
 export const projects = [
-    {
-      title: "Project 1",
-      description: "A brief description of Project 1",
-      image: "/project1.jpg",
-      link: "https://project1.com",
-    },
-    {
-      title: "Project 2",
-      description: "A brief description of Project 2",
-      image: "/project2.jpg",
-      link: "https://project2.com",
-    },
-    {
-      title: "Project 3",
-      description: "A brief description of Project 3",
-      image: "/project3.jpg",
-      link: "https://project3.com",
-    },
-  ]
+  {
+    title: "Podcastify",
+    description:
+      "A free podcast streaming app built with React, enabling users to stream any podcast globally without needing to sign up.",
+    tech: ["React", "React Router", "Material UI" ,"Tailwind CSS"],
+    image: "/podcastify.png",
+    link: "https://podcastify-v0.vercel.app/",
+  },
+  {
+    title: "Jobisearch",
+    description:
+      "A job search application built with React and TypeScript that allows users to search for jobs worldwide.",
+    tech: ["React", "TypeScript", "Shadcn", "Express js" , 'MongoDB', "Node.js", "Tailwind CSS"],
+    image: "/jobisearch.png",
+    link: "https://jobisearch.vercel.app/",
+  },
+  {
+    title: "SEO-Friendly Service Website",
+    description:
+      "Developed an SEO-optimized website for a startup to enhance online visibility and service reach.",
+    tech: ["Next.js", "Emailjs", "Tailwind CSS", "Next-Router"],
+    image: "/aj.png",
+    link: "https://www.ajmedia.co.ke",
+  },
+  {
+    title: "Cat Facts",
+    description:
+      "A fun React web app designed for cat lovers to view and share interesting cat facts.",
+    tech: ["React", "React Router", "Material UI" ,"Tailwind CSS"],
+    image: "/catfacts.png",
+    link: "https://random-cat-facts-ten.vercel.app/",
+  },
+];
+
   
   import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaGithub } from "react-icons/fa"
 import {
