@@ -56,7 +56,7 @@ const Navbar = () => {
         </div>
         <div className="flex items-center space-x-4">
           <a
-            href="/Abiud-Masinde Resume.pdf"
+            href="/Abiud-Maisnde Resume.pdf"
             download
             className="bg-red-900   font-semiboldpx-4 py-2 px-2 rounded-lg sm:ml-4 hover:bg-teal-700 transition-colors"
           >
