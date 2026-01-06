@@ -1,9 +1,17 @@
 export const projects = [
   {
+    title: "EzyPay M-Pesa Cashier Terminal",
+    description:
+      "A premium, localized M-Pesa STK Push payment terminal designed for businesses to manage cashier-led transactions with real-time tracking and notifications.",
+    tech: ["React Native", "Expo", "Node.js", "Express", "PostgreSQL", "Vercel"],
+    image: "/ezypay.jpeg",
+    link: "https://7cg20ipe7j.ufs.sh/f/Dl6fRq4HyrlHRg1h6lxnVHhEzBeiS4WCN8fJwuMdptRIxsv0",
+  },
+  {
     title: "Podcastify",
     description:
       "A free podcast streaming app built with React, enabling users to stream any podcast globally without needing to sign up.",
-    tech: ["React", "React Router", "Material UI" ,"Tailwind CSS"],
+    tech: ["React", "React Router", "Material UI", "Tailwind CSS"],
     image: "/podcastify.png",
     link: "https://podcastify-v0.vercel.app/",
   },
@@ -11,7 +19,7 @@ export const projects = [
     title: "Jobisearch",
     description:
       "A job search application built with React and TypeScript that allows users to search for jobs worldwide.",
-    tech: ["React", "TypeScript", "Shadcn", "Express js" , 'MongoDB', "Node.js", "Tailwind CSS"],
+    tech: ["React", "TypeScript", "Shadcn", "Express js", "MongoDB", "Node.js", "Tailwind CSS"],
     image: "/jobisearch.png",
     link: "https://jobisearch.vercel.app/",
   },
@@ -27,7 +35,7 @@ export const projects = [
     title: "Cat Facts",
     description:
       "A fun React web app designed for cat lovers to view and share interesting cat facts.",
-    tech: ["React", "React Router", "Material UI" ,"Tailwind CSS"],
+    tech: ["React", "React Router", "Material UI", "Tailwind CSS"],
     image: "/catfacts.png",
     link: "https://random-cat-facts-ten.vercel.app/",
   },
