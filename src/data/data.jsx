@@ -5,7 +5,7 @@ export const projects = [
       "A premium, localized M-Pesa STK Push payment terminal designed for businesses to manage cashier-led transactions with real-time tracking and notifications.",
     tech: ["React Native", "Expo", "Node.js", "Express", "PostgreSQL", "Vercel"],
     image: "/ezypay.jpeg",
-    link: "https://7cg20ipe7j.ufs.sh/f/Dl6fRq4HyrlHRg1h6lxnVHhEzBeiS4WCN8fJwuMdptRIxsv0",
+    link: "https://ezypaylanding.vercel.app/#how-it-works",
   },
   {
     title: "Podcastify",
