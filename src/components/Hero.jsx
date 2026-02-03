@@ -9,7 +9,10 @@ const Hero = () => {
                                 Hey 👋 I am <span className="text-red-900">Abiud Masinde</span>, FrontEnd Developer.
                             </h1>
                             <p className="mt-5 text-base font-normal leading-7 text-black">
-                                Passionate FrontEnd Developer with 2+ years of experience in building responsive applicationS using  <span className="text-red-800 font-bold">JavaScript, React, Next, Node, Express, and Tailwind CSS.</span>
+                                I am a creative and results-driven fullstack developer with 4+ years of experience specializing in ReactJS, React Native, NextJS, Vanilla JavaScript,
+NodeJs, ExpressJs and Redux. I excel at building responsive, high-performance web applications, integrating RESTful APIs, and delivering scalable, SEO-
+friendly solutions. Proficient with PostgreSQL, Git, GitHub, and modern front-end tools, I thrive in agile team environments and enjoy leveraging
+emerging technologies to enhance user experiences and solve complex challenges.  <span className="text-red-800 font-bold">JavaScript, React, Next, Node, Express, Svelte, Javascript,Tailwind CSS.</span>
                             </p>
                             <div className="flex items-center mt-9 space-x-4">
                                 <div className="relative inline-flex group">
