@@ -6,7 +6,7 @@ const Hero = () => {
                     <div className="grid max-w-md grid-cols-1 mx-auto lg:grid-cols-12 gap-x-6 gap-y-8 lg:max-w-none">
                         <div className="self-center pt-10 lg:col-span-4">
                             <h1 className="text-3xl font-bold text-gray-950 sm:text-4xl xl:text-5xl">
-                                Hey 👋 I am <span className="text-red-900">Abiud Masinde</span>, FrontEnd Developer.
+                                Hey 👋 I am <span className="text-red-900">Abiud Masinde</span>, FullStack Developer.
                             </h1>
                             <p className="mt-5 text-base font-normal leading-7 text-black">
                                 I am a creative and results-driven fullstack developer with 4+ years of experience specializing in ReactJS, React Native, NextJS, Vanilla JavaScript,
