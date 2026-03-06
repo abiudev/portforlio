@@ -1,44 +1,56 @@
-"use client"
-
-import { useEffect, useRef } from "react"
-import { motion, useAnimation, useInView } from "framer-motion"
 import { technologies } from "../data/data"
+import {
+  Container,
+  FlaskConical,
+  GitBranch,
+  KeyRound,
+  Network,
+  ShieldCheck,
+  ShieldEllipsis,
+  Timer,
+} from "lucide-react"
+
+const extraSkills = [
+  { name: "Mongoose", icon: Network },
+  { name: "REST APIs", icon: FlaskConical },
+  { name: "JWT Auth", icon: KeyRound },
+  { name: "RBAC", icon: ShieldCheck },
+  { name: "React Testing Library", icon: FlaskConical },
+  { name: "Supertest", icon: FlaskConical },
+  { name: "Docker", icon: Container },
+  { name: "CI/CD", icon: GitBranch },
+  { name: "Rate Limiting", icon: Timer },
+  { name: "OWASP Basics", icon: ShieldEllipsis },
+]
 
 const Technologies = () => {
-  const controls = useAnimation()
-  const ref = useRef(null)
-  const inView = useInView(ref, { once: true })
-
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible")
-    }
-  }, [controls, inView])
+  const skills = [
+    ...technologies.map((tech) => ({ ...tech, iconType: "react-icons" })),
+    ...extraSkills
+      .filter((extra) => !technologies.some((tech) => tech.name.toLowerCase() === extra.name.toLowerCase()))
+      .map((extra) => ({ ...extra, color: "var(--accent)", iconType: "lucide" })),
+  ]
 
   return (
-    <section id="technologies" className="py-20 bg-gray-200">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl lg:text-4xl font-bold mb-10 text-center">
-          <span className="text-red-900">My  Tech Stack</span>
-        </h2>
-        <div ref={ref} className="grid grid-cols-2 md:grid-cols-3 lg:px-30 sm:grid-cols-2 lg:grid-cols-5 gap-8">
-          {technologies.map((tech, index) => (
-            <motion.div
-            key={tech.name}
-            className="flex border-2 bg-gray-300 py-2 px-4 border-red-900 shadow-[0px_4px_10px_rgba(185,28,28,0.7)] rounded-lg flex-col items-center max-w-xs mx-auto"
-            initial="hidden"
-            animate={controls}
-            variants={{
-              hidden: { opacity: 0, y: 20 },
-              visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: index * 0.1 } },
-            }}
-          >
-          
-              <motion.div whileHover={{ scale: 1.1, rotate: 5 }} className="text-6xl mb-2">
-                <tech.icon style={{ color: tech.color }} />
-              </motion.div>
-              <span className="text-sm text-red-900">{tech.name}</span>
-            </motion.div>
+    <section id="technologies" className="section-shell reveal">
+      <div className="section-wrap">
+        <div className="section-head">
+          <span className="section-head__index">02</span>
+          <h2 className="section-head__title">Tech Stack</h2>
+          <div className="section-head__rule" />
+        </div>
+
+        <div className="skills-grid skills-grid--icons">
+          {skills.map((skill) => (
+            <div key={skill.name} className="skills-grid__cell skills-grid__cell--icon">
+              <skill.icon
+                className="skills-grid__icon"
+                size={16}
+                style={{ color: skill.color }}
+                strokeWidth={skill.iconType === "lucide" ? 2 : undefined}
+              />
+              <span>▸ {skill.name}</span>
+            </div>
           ))}
         </div>
       </div>
@@ -47,4 +59,3 @@ const Technologies = () => {
 }
 
 export default Technologies
-

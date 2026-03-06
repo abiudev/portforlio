@@ -44,33 +44,28 @@ export const projects = [
   
   import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaGithub } from "react-icons/fa"
 import {
+  SiJavascript,
   SiTypescript,
   SiNextdotjs,
+  SiMongodb,
   SiExpress,
   SiTailwindcss,
-  SiWebpack,
-  SiBabel,
   SiRedux,
-  SiGraphql,
-  SiSass,
   SiJest,
 } from "react-icons/si"
 
 export const technologies = [
+  { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
   { name: "React", icon: FaReact, color: "#61DAFB" },
   { name: "HTML5", icon: FaHtml5, color: "#E34F26" },
   { name: "CSS3", icon: FaCss3Alt, color: "#1572B6" },
   { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-  { name: "Next.js", icon: SiNextdotjs, color: "#000000" },
+  { name: "Next.js", icon: SiNextdotjs, color: "#E8E8F0" },
   { name: "Node.js", icon: FaNodeJs, color: "#339933" },
-  { name: "GitHub", icon: FaGithub, color: "#181717" },
-  { name: "Express.js", icon: SiExpress, color: "#000000" },
+  { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+  { name: "GitHub", icon: FaGithub, color: "#E8E8F0" },
+  { name: "Express.js", icon: SiExpress, color: "#E8E8F0" },
   { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
-  { name: "Webpack", icon: SiWebpack, color: "#8DD6F9" },
-  { name: "Babel", icon: SiBabel, color: "#F9DC3E" },
   { name: "Redux", icon: SiRedux, color: "#764ABC" },
-  { name: "GraphQL", icon: SiGraphql, color: "#E10098" },
-  { name: "Sass", icon: SiSass, color: "#CC6699" },
   { name: "Jest", icon: SiJest, color: "#C21325" },
 ]
-
