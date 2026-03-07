@@ -33,9 +33,10 @@ const Hero = () => {
             I am a creative and results-driven fullstack developer with 4+ years of experience specializing in
             ReactJS, React Native, NextJS, Vanilla JavaScript, NodeJs, ExpressJs and Redux. I excel at building
             responsive, high-performance web applications, integrating RESTful APIs, and delivering scalable,
-            SEO-friendly solutions. Proficient with PostgreSQL, Git, GitHub, and modern front-end tools, I thrive in
-            agile team environments and enjoy leveraging emerging technologies to enhance user experiences and solve
-            complex challenges. JavaScript, React, Next, Node, Express, Svelte, Javascript, Tailwind CSS.
+            SEO-friendly solutions and AI/Agentic Integrations. Proficient with PostgreSQL, Git, GitHub, and modern
+            front-end tools, I thrive in agile team environments and enjoy leveraging emerging technologies to enhance
+            user experiences and solve complex challenges. JavaScript, React, Next, Node, Express, Svelte, Javascript,
+            Tailwind CSS.
           </p>
 
           <div className="hero__actions hero-animate" style={{ animationDelay: "0.7s" }}>

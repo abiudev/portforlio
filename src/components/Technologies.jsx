@@ -1,5 +1,6 @@
 import { technologies } from "../data/data"
 import {
+  Bot,
   Container,
   FlaskConical,
   GitBranch,
@@ -13,9 +14,11 @@ import {
 const extraSkills = [
   { name: "Mongoose", icon: Network },
   { name: "REST APIs", icon: FlaskConical },
+  { name: "AI/Agentic Integrations", icon: Bot },
   { name: "JWT Auth", icon: KeyRound },
   { name: "RBAC", icon: ShieldCheck },
   { name: "React Testing Library", icon: FlaskConical },
+  { name: "SEO", icon: Network },
   { name: "Supertest", icon: FlaskConical },
   { name: "Docker", icon: Container },
   { name: "CI/CD", icon: GitBranch },
