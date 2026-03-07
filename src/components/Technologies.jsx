@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react"
 import { technologies } from "../data/data"
 import {
   Bot,
@@ -10,6 +11,7 @@ import {
   ShieldEllipsis,
   Timer,
 } from "lucide-react"
+import { trackEvent } from "../lib/analytics.js"
 
 const extraSkills = [
   { name: "Mongoose", icon: Network },
@@ -27,6 +29,8 @@ const extraSkills = [
 ]
 
 const Technologies = () => {
+  const sectionRef = useRef(null)
+
   const skills = [
     ...technologies.map((tech) => ({ ...tech, iconType: "react-icons" })),
     ...extraSkills
@@ -34,8 +38,24 @@ const Technologies = () => {
       .map((extra) => ({ ...extra, color: "var(--accent)", iconType: "lucide" })),
   ]
 
+  useEffect(() => {
+    const node = sectionRef.current
+    if (!node) return
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          trackEvent("tech_skill_viewed", { skill_count: skills.length })
+          observer.disconnect()
+        }
+      },
+      { threshold: 0.3 },
+    )
+    observer.observe(node)
+    return () => observer.disconnect()
+  }, [skills.length])
+
   return (
-    <section id="technologies" className="section-shell reveal">
+    <section ref={sectionRef} id="technologies" className="section-shell reveal">
       <div className="section-wrap">
         <div className="section-head">
           <span className="section-head__index">02</span>
