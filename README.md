@@ -1,8 +1,12 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## PostHog setup
 
-Currently, two official plugins are available:
+1. Copy `.env.example` to `.env.local`.
+2. Set `VITE_POSTHOG_KEY` to your PostHog project API key.
+3. Set `VITE_POSTHOG_HOST` to your PostHog instance host.
+   Use `https://us.i.posthog.com` for US Cloud or `https://eu.i.posthog.com` for EU Cloud.
+4. Restart the Vite dev server after changing env values.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Analytics initialization lives in `src/lib/analytics.js` and is imported once from `src/main.jsx`.
+In local development, the SDK initializes but opts out of capturing to avoid polluting production analytics.
