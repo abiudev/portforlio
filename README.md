@@ -9,4 +9,4 @@
 4. Restart the Vite dev server after changing env values.
 
 Analytics initialization lives in `src/lib/analytics.js` and is imported once from `src/main.jsx`.
-In local development, the SDK initializes but opts out of capturing to avoid polluting production analytics.
+In local development, the SDK runs normally if the env vars are set and enables PostHog debug logging in the browser console.

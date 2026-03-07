@@ -11,10 +11,10 @@ if (posthogKey && typeof window !== 'undefined') {
     capture_pageleave: true,
     autocapture: true,
     defaults: '2026-01-30',
-    loaded: (instance) => {
-      if (import.meta.env.DEV) {
-        instance.opt_out_capturing()
-      }
-    },
+    debug: import.meta.env.DEV,
   })
+} else if (typeof window !== 'undefined' && import.meta.env.DEV) {
+  console.warn(
+    'PostHog disabled: set VITE_POSTHOG_KEY in .env.local and restart the dev server.',
+  )
 }
