@@ -1,4 +1,5 @@
 import { projects } from "../data/data"
+import { trackEvent } from "../lib/analytics.js"
 
 const Projects = () => {
   return (
@@ -21,7 +22,13 @@ const Projects = () => {
               <div className="project-row__main">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-row__link">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-row__link"
+                  onClick={() => trackEvent("project_opened", { project: project.title, url: project.link })}
+                >
                   Explore Project
                 </a>
               </div>

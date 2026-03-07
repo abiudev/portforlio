@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { trackEvent } from "../lib/analytics.js";
 
 const navLinks = [
   { label: "About", id: "about" },
@@ -20,6 +21,7 @@ const Navbar = () => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) element.scrollIntoView({ behavior: "smooth", block: "start" });
+    trackEvent("nav_section_clicked", { section: sectionId });
     setIsMenuOpen(false);
   };
 
@@ -40,7 +42,12 @@ const Navbar = () => {
               {link.label}
             </button>
           ))}
-          <a href="/AM.pdf" download className="btn-ghost">
+          <a
+            href="/AM.pdf"
+            download
+            className="btn-ghost"
+            onClick={() => trackEvent("resume_download_clicked", { location: "desktop_nav" })}
+          >
             Resume
           </a>
         </div>
@@ -65,7 +72,12 @@ const Navbar = () => {
               {link.label}
             </button>
           ))}
-          <a href="/AM.pdf" download className="btn-ghost">
+          <a
+            href="/AM.pdf"
+            download
+            className="btn-ghost"
+            onClick={() => trackEvent("resume_download_clicked", { location: "mobile_nav" })}
+          >
             Resume
           </a>
         </div>
