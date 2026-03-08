@@ -2,20 +2,16 @@ import posthog from 'posthog-js'
 
 const posthogKey =
   import.meta.env.VITE_PUBLIC_POSTHOG_KEY || import.meta.env.VITE_POSTHOG_KEY
-const posthogHost =
-  import.meta.env.VITE_PUBLIC_POSTHOG_HOST ||
-  import.meta.env.VITE_POSTHOG_HOST ||
-  'https://us.i.posthog.com'
 export const analyticsEnabled = Boolean(posthogKey) && typeof window !== 'undefined'
 
 if (analyticsEnabled) {
   posthog.init(posthogKey, {
-    api_host: posthogHost,
+    api_host: '/ingest',
+    ui_host: 'https://us.posthog.com',
     person_profiles: 'identified_only',
     capture_pageview: true,
     capture_pageleave: true,
     autocapture: true,
-    defaults: '2026-01-30',
     debug: import.meta.env.DEV,
   })
 
@@ -24,7 +20,6 @@ if (analyticsEnabled) {
     href: window.location.href,
     path: window.location.pathname,
     host: window.location.host,
-    posthog_host: posthogHost,
   })
 
   window.posthog = posthog
