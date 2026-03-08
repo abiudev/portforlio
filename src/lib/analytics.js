@@ -1,7 +1,9 @@
 import posthog from 'posthog-js'
 
 const posthogKey =
-  import.meta.env.VITE_PUBLIC_POSTHOG_KEY || import.meta.env.VITE_POSTHOG_KEY
+  import.meta.env.VITE_PUBLIC_POSTHOG_KEY ||
+  import.meta.env.VITE_POSTHOG_KEY ||
+  'phc_omKXXrqfBfHjtGJTSnmhJ3UgxH74CrjQXfeOhV7hi7e'
 export const analyticsEnabled = Boolean(posthogKey) && typeof window !== 'undefined'
 
 if (analyticsEnabled) {
