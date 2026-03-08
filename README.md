@@ -12,3 +12,14 @@
 
 Analytics initialization lives in `src/lib/analytics.js` and is imported once from `src/main.jsx`.
 In local development, the SDK runs normally if the env vars are set and enables PostHog debug logging in the browser console.
+
+## Vercel production setup
+
+In Vercel Project Settings -> Environment Variables, set these for `Production`:
+
+- `VITE_PUBLIC_POSTHOG_KEY=<your project key>`
+- `VITE_PUBLIC_POSTHOG_HOST=https://us.i.posthog.com`
+
+After saving the variables, trigger a fresh production redeploy so Vite rebuilds the client bundle with the updated values.
+
+The site sends a `portfolio_loaded` event on startup. After redeploying, verify the hosted site in a clean browser session and confirm the event appears in PostHog Live Events before re-running PostHog verification.

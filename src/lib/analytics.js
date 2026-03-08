@@ -20,8 +20,11 @@ if (analyticsEnabled) {
   })
 
   posthog.capture('portfolio_loaded', {
+    environment: import.meta.env.MODE,
+    href: window.location.href,
     path: window.location.pathname,
     host: window.location.host,
+    posthog_host: posthogHost,
   })
 
   window.posthog = posthog
