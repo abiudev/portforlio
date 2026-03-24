@@ -1,5 +1,22 @@
 export const projects = [
   {
+    title: "ATSREADY HR",
+    description:
+      "ATSREADY HR is a recruiter-focused SaaS platform for structured hiring, helping teams create roles, rank candidates, review fit reports, and manage shortlists from one workspace. It combines a premium public landing experience with an authenticated HR workflow for screening, analytics, integrations, and team collaboration.",
+    tech: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "NextAuth",
+      "Supabase",
+      "Node.js",
+      "PostgreSQL",
+    ],
+    image: "/ats.jpg",
+    link: "https://atsready.pro/hr",
+  },
+  {
     title: "EzyPay M-Pesa Cashier Terminal",
     description:
       "A premium, localized M-Pesa STK Push payment terminal designed for businesses to manage cashier-led transactions with real-time tracking and notifications.",

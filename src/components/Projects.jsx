@@ -22,15 +22,17 @@ const Projects = () => {
               <div className="project-row__main">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-row__link"
-                  onClick={() => trackEvent("project_opened", { project: project.title, url: project.link })}
-                >
-                  Explore Project
-                </a>
+                {project.link ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-row__link"
+                    onClick={() => trackEvent("project_opened", { project: project.title, url: project.link })}
+                  >
+                    Explore Project
+                  </a>
+                ) : null}
               </div>
 
               <div className="project-row__tags">
