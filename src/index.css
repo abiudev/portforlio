@@ -642,17 +642,20 @@ button {
   }
 
   .project-row__tags {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-column: 2 / span 2;
-    justify-content: flex-start;
+    justify-content: stretch;
+  }
+
+  .project-row__tags .tag {
+    text-align: center;
   }
 
   .about-grid {
     grid-template-columns: 1fr;
   }
 
-  .skills-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 760px) {
@@ -728,7 +731,6 @@ button {
 
   .project-row__tags {
     grid-column: auto;
-    justify-content: flex-start;
   }
 
   .btn-primary,
@@ -738,10 +740,6 @@ button {
 }
 
 @media (max-width: 640px) {
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-
   .hero__actions {
     display: grid;
     grid-template-columns: 1fr;
