@@ -350,10 +350,11 @@ button {
 }
 
 .hero__actions {
-  margin-top: 24px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 10px;
+  align-self: center;
+  justify-self: end;
 }
 
 .btn-primary,
@@ -631,6 +632,13 @@ button {
 
   .hero__layout {
     grid-template-columns: 1fr;
+  }
+
+  .hero__actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-self: start;
+    align-self: start;
   }
 
   .hero__media {

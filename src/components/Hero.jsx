@@ -40,30 +40,30 @@ const Hero = () => {
             Tailwind CSS.
           </p>
 
-          <div className="hero__actions hero-animate" style={{ animationDelay: "0.7s" }}>
-            <a
-              href="mailto:abiudev@gmail.com"
-              className="btn-primary"
-              onClick={() => trackEvent("hire_me_clicked", { location: "hero" })}
-            >
-              Hire Me
-            </a>
-            {socials.map(({ label, href, icon: Icon }) => (
-              <a
-                key={label}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-ghost"
-                onClick={() => trackEvent("social_link_clicked", { platform: label, location: "hero" })}
-              >
-                <Icon size={14} />
-                {label}
-              </a>
-            ))}
-          </div>
         </div>
 
+        <div className="hero__actions hero-animate" style={{ animationDelay: "0.7s" }}>
+          <a
+            href="mailto:abiudev@gmail.com"
+            className="btn-primary"
+            onClick={() => trackEvent("hire_me_clicked", { location: "hero" })}
+          >
+            Hire Me
+          </a>
+          {socials.map(({ label, href, icon: Icon }) => (
+            <a
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-ghost"
+              onClick={() => trackEvent("social_link_clicked", { platform: label, location: "hero" })}
+            >
+              <Icon size={14} />
+              {label}
+            </a>
+          ))}
+        </div>
       </div>
 
       <div className="hero__stats hero-animate" style={{ animationDelay: "0.9s" }}>
