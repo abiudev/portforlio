@@ -64,9 +64,6 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="hero__media hero-animate" style={{ animationDelay: "0.6s" }}>
-          <img src="/abiud.jpg" alt="Abiud Masinde" />
-        </div>
       </div>
 
       <div className="hero__stats hero-animate" style={{ animationDelay: "0.9s" }}>
