@@ -14,7 +14,7 @@ export const projects = [
       "PostgreSQL",
     ],
     image: "/ats.jpg",
-    link: "https://atsready.pro/hr",
+    link: "https://atshr.vercel.app/hr",
   },
   {
     title: "EzyPay M-Pesa Cashier Terminal",
