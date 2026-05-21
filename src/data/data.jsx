@@ -1,60 +1,54 @@
 export const projects = [
   {
-    title: "ATSREADY HR",
+    title: "EzzyPay",
     description:
-      "ATSREADY HR is a recruiter-focused SaaS platform for structured hiring, helping teams create roles, rank candidates, review fit reports, and manage shortlists from one workspace. It combines a premium public landing experience with an authenticated HR workflow for screening, analytics, integrations, and team collaboration.",
+      "A mobile payment app built with React Native that streamlines M-Pesa STK Push transactions for businesses. The app enables cashier-led payments from individual devices, tracks transaction status in real time, records each payment with the cashier's name for accountability, integrates with the M-Pesa Daraja API, and sends instant confirmations to a shared Telegram channel. The backend is built with Node.js and Express, deployed serverlessly on Vercel, and uses PostgreSQL on Neon for reliable transaction storage.",
+    tech: ["React Native", "M-Pesa Daraja API", "Node.js", "Express", "Vercel", "PostgreSQL", "Neon", "Telegram"],
+    image: "/ezypay.jpeg",
+    link: "https://ezypaylanding.vercel.app",
+  },
+  {
+    title: "ATS Ready",
+    description:
+      "An AI-powered hiring and recruitment platform built with Next.js, React, and TypeScript to help HR teams, recruiters, and managers create roles, import resumes, rank candidates using AI, and generate interview plans without relying on manual screening. It integrates authentication, database workflows, file uploads, and tools such as Google Drive, Gmail, Outlook, Zoho, and Google Sheets to support a complete hiring workflow.",
     tech: [
       "Next.js",
       "React",
       "TypeScript",
-      "Tailwind CSS",
-      "NextAuth",
-      "Supabase",
-      "Node.js",
-      "PostgreSQL",
+      "AI",
+      "Authentication",
+      "File Uploads",
+      "Google Drive",
+      "Gmail",
+      "Outlook",
+      "Zoho",
     ],
     image: "/ats.jpg",
-    link: "https://atshr.vercel.app/hr",
+    link: "https://atsready.pro",
   },
   {
-    title: "EzyPay M-Pesa Cashier Terminal",
+    title: "AjiriFlow",
     description:
-      "A premium, localized M-Pesa STK Push payment terminal designed for businesses to manage cashier-led transactions with real-time tracking and notifications.",
-    tech: ["React Native", "Expo", "Node.js", "Express", "PostgreSQL", "Vercel"],
-    image: "/ezypay.jpeg",
-    link: "https://ezypaylanding.vercel.app/#how-it-works",
-  },
-  {
-    title: "Podcastify",
-    description:
-      "A free podcast streaming app built with React, enabling users to stream any podcast globally without needing to sign up.",
-    tech: ["React", "React Router", "Material UI", "Tailwind CSS"],
-    image: "/podcastify.png",
-    link: "https://podcastify-v0.vercel.app/",
+      "An AI-powered resume enhancement platform built with Next.js, React, and TypeScript to help job seekers create stronger, ATS-friendly applications. The app allows users to build and optimize resumes, generate tailored cover letters, and improve LinkedIn profiles using AI-powered recommendations, with authentication, payment workflows, document generation, and user entitlement logic for free and premium features.",
+    tech: ["Next.js", "React", "TypeScript", "AI", "Authentication", "Payments", "Document Generation"],
+    image: "/aj.png",
+    link: "https://ajiriflow.com",
   },
   {
     title: "Jobisearch",
     description:
-      "A job search application built with React and TypeScript that allows users to search for jobs worldwide.",
-    tech: ["React", "TypeScript", "Shadcn", "Express js", "MongoDB", "Node.js", "Tailwind CSS"],
+      "A job search application built with React and TypeScript that enables users to search for jobs globally, apply, and track their application statistics on a personalized dashboard. Designed with scalability in mind to handle a high volume of job listings and user queries.",
+    tech: ["React", "TypeScript", "Redux", "PostgreSQL", "Vercel"],
     image: "/jobisearch.png",
     link: "https://jobisearch.vercel.app/",
   },
   {
-    title: "SEO-Friendly Service Website",
+    title: "Podcastify",
     description:
-      "Developed an SEO-optimized website for a startup to enhance online visibility and service reach.",
-    tech: ["Next.js", "Emailjs", "Tailwind CSS", "Next-Router"],
-    image: "/aj.png",
-    link: "https://www.ajmedia.co.ke",
-  },
-  {
-    title: "Cat Facts",
-    description:
-      "A fun React web app designed for cat lovers to view and share interesting cat facts.",
-    tech: ["React", "React Router", "Material UI", "Tailwind CSS"],
-    image: "/catfacts.png",
-    link: "https://random-cat-facts-ten.vercel.app/",
+      "A free podcast streaming app built with React, integrating two third-party REST APIs to pull podcast data. The app allows users to listen to episodes without needing to sign up, uses state management for efficient data flow, and features a clean UI built with Material UI and React Router for smooth navigation.",
+    tech: ["React", "REST APIs", "Material UI", "React Router", "State Management"],
+    image: "/podcastify.png",
+    link: "https://podcastify-v0.vercel.app/",
   },
 ];
 
