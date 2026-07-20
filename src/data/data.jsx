@@ -1,12 +1,5 @@
 export const projects = [
-  {
-    title: "EzzyPay",
-    description:
-      "A mobile payment app built with React Native that streamlines M-Pesa STK Push transactions for businesses. The app enables cashier-led payments from individual devices, tracks transaction status in real time, records each payment with the cashier's name for accountability, integrates with the M-Pesa Daraja API, and sends instant confirmations to a shared Telegram channel. The backend is built with Node.js and Express, deployed serverlessly on Vercel, and uses PostgreSQL on Neon for reliable transaction storage.",
-    tech: ["React Native", "M-Pesa Daraja API", "Node.js", "Express", "Vercel", "PostgreSQL", "Neon", "Telegram"],
-    image: "/ezypay.jpeg",
-    link: "https://ezypaylanding.vercel.app",
-  },
+
   {
     title: "ATS Ready",
     description:
@@ -50,6 +43,14 @@ export const projects = [
     image: "/podcastify.png",
     link: "https://podcastify-v0.vercel.app/",
   },
+    {
+    title: "EzzyPay",
+    description:
+      "A mobile payment app built with React Native that streamlines M-Pesa STK Push transactions for businesses. The app enables cashier-led payments from individual devices, tracks transaction status in real time, records each payment with the cashier's name for accountability, integrates with the M-Pesa Daraja API, and sends instant confirmations to a shared Telegram channel. The backend is built with Node.js and Express, deployed serverlessly on Vercel, and uses PostgreSQL on Neon for reliable transaction storage.",
+    tech: ["React Native", "M-Pesa Daraja API", "Node.js", "Express", "Vercel", "PostgreSQL", "Neon", "Telegram"],
+    image: "/ezypay.jpeg",
+    link: "https://ezypaylanding.vercel.app",
+  }
 ];
 
   
